@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/ruby
 
 #################################################################
 #		  WhiteSpaceF**k v0.0.1 by Dmitry Kudriavtsev			#
