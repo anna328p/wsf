@@ -24,7 +24,7 @@ ARRAY_SIZE = 1048576
 abort "Incorrect number of arguments.\nUsage: #{File.basename __FILE__} <infile>" if ARGV.size != 1
 abort "The file #{ARGV[0]} does not exist." if not File.exist? ARGV[0]
 
-require './constants'
+require "#{File.dirname(__FILE__)}/constants"
 
 program = File.read ARGV[0]										# read the input file
 

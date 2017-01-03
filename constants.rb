@@ -13,14 +13,14 @@ TRI_TO_BF = {													# Trit to BF translation table.
 }
 
 REPLACEMENTS = {												# code from Code Golf Stack Exchange
-	"."		=> "putc a[i]",										# http://codegolf.stackexchange.com
-	","		=> "a[i] = getc",									# licensed under CC-BY-SA 3.0
+	"."		=> "STDOUT.putc a[i].chr",							# http://codegolf.stackexchange.com
+	","		=> "a[i] = STDIN.getc.ord",							# licensed under CC-BY-SA 3.0
 	"["		=> "while a[i] > 0 do",								# http://dk0.us/g
 	"]"		=> "end",											# Fragments of code by user sepp2k
 	"<"		=> "i -= 1",										# http://codegolf.stackexchange.com/users/30/sepp2k
 	">"		=> "i += 1",
-	"+"		=> "a[i]+=1",
-	"-"		=> "a[i]-=1"
+	"+"		=> "a[i] += 1 || 1",
+	"-"		=> "a[i] -= 1 || -1"
 }
 
 WHITESPACE 	= " \t\n"											# substitution input
