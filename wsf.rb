@@ -28,6 +28,8 @@ require "#{File.dirname(__FILE__)}/constants"
 
 program = File.read ARGV[0]										# read the input file
 
+program.delete! "^ \t\n"
+
 program.tr! WHITESPACE, TRINARY									# translate whitespace into trits
 
 program += "2" if program.length.odd?							# pad with 2's if length is odd
