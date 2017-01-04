@@ -40,7 +40,7 @@ prg_array = program.chars										# split into array
 prg_tokens = prg_array.each_slice(2).to_a.map {|s| s.join}		# split into groups of 2 tokens
 STDERR.puts prg_tokens.join ' '
 
-prg_tokenized = prg_tokens.map {|i| TRI_TO_BF[i] || "G"}				# tokenize / translate into BF
+prg_tokenized = prg_tokens.map {|i| TRI_TO_BF[i] || "G"}		# tokenize / translate into BF
 STDERR.puts prg_tokenized.join '  '
 
 prg_statements = prg_tokenized.map {|i| REPLACEMENTS[i]}
