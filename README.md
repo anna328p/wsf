@@ -21,4 +21,4 @@ Then, the translated code is padded with `2`s to an even length, chunked into se
     "21" 	=> "]",	
     "22" 	=> "G"
     
-Uses a semi-custom Brainfuck interpreter in which cells can have infinite values, and there are 1048576 cells.
+Uses a semi-custom BF interpreter in which cells can have infinite values, and there are 1048576 cells.
