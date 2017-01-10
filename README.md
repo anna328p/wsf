@@ -1,4 +1,4 @@
-# wsf - WhiteSpaceF**k
+# wsf
 
 This is a BF derivative that uses whitespace.
 
