@@ -4,7 +4,7 @@ This is a BF derivative that uses whitespace.
 
 ## Syntax
 
-All sequences of whitespace are interpreted as trits (trinary digits) with all other characters ignored/removed. The translation table is below:
+All sequences of whitespace are interpreted as trits (ternary digits) with all other characters ignored/removed. The translation table is below:
 
     WHITESPACE 	= " \t\n"
     TRINARY		  = "012"	
